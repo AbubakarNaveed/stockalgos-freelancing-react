@@ -1,0 +1,56 @@
+@import "../variables/colors.scss";
+@import "../variables/spaces_fonts.scss";
+
+.navbar__container {
+  padding: 10px;
+  background-color: $backgroundColor;
+  height: 80px;
+}
+
+.navbar__wrapper {
+  max-width: $maxWidth;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__btn__group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  button {
+    color: $secondary;
+    padding: 11px 35px;
+    font-size: 17px;
+    background-color: #ffff;
+    border-radius: 14px;
+    border: solid 1px #d3d3d3;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar__btn__group {
+    button {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navImage {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navImage {
+    width: 120px;
+  }
+
+  .navbar__container {
+    height: 60px;
+  }
+}

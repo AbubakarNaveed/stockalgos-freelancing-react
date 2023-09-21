@@ -1,0 +1,148 @@
+@import "../variables/colors.scss";
+@import "../variables/spaces_fonts.scss";
+
+.footer__container {
+  background-color: #fff;
+  padding: 0 10px;
+  height: 40px;
+  overflow: hidden !important;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.footer__social_media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  p {
+    font-size: 12px;
+    color: $terary;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact__border__flex {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  border-right: 1px solid #b8b8b8;
+  gap: 2px;
+  p {
+    font-size: 12px;
+    color: $terary;
+  }
+}
+.footer__contact__border {
+  padding: 0px 10px;
+  border-right: 1px solid #b8b8b8;
+
+  p {
+    font-size: 12px;
+    color: $terary;
+  }
+}
+.footer__contact__noborder {
+  p {
+    font-size: 12px;
+    color: $terary;
+  }
+  padding: 0 10px;
+}
+
+.footer__copyright__section {
+  display: flex;
+}
+
+@media screen and (max-width: 1120px) {
+  .footer__container {
+    background-color: #fff;
+    padding: 0 10px;
+    height: 150px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .footer__contact__border {
+    padding: 0px 10px;
+    border-right: 1px solid #b8b8b8;
+
+    p {
+      font-size: 10px;
+      color: $terary;
+    }
+  }
+  .footer__contact__noborder {
+    p {
+      font-size: 10px;
+      color: $terary;
+    }
+    padding: 0 10px;
+  }
+  .footer__contact__border__flex {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-right: 1px solid #b8b8b8;
+    gap: 2px;
+    p {
+      font-size: 10px;
+      color: $terary;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__container {
+    background-color: #fff;
+    padding: 0 10px;
+    height: 150px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .footer__contact {
+    p {
+      font-size: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer__contact {
+    display: none;
+  }
+  .footer__social_media {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer__copyright__section {
+    div {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import "../variables/spaces_fonts.scss";
+@import "../variables/colors.scss";
+.feature__container {
+  max-width: $maxWidth;
+  padding: 120px 10px;
+  width: 100%;
+}
+
+.feature__wrapper {
+  margin: 0 auto;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature__heading {
+  font-size: $small;
+  color: $terary;
+  width: 100%;
+  text-align: center;
+}
+
+.feature__news__logos {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img {
+      mix-blend-mode: screen;
+    }
+  }
+}
+
+/* image 117 */
+
+// width: 128.75px;
+// height: 40px;
+
+// background: linear-gradient(0deg, #000000, #000000), url(image.png);
+// background-blend-mode: color, normal;
+
+// /* Inside auto layout */
+// flex: none;
+// order: 0;
+// flex-grow: 0;
+
+@media screen and (max-width: 900px) {
+  .feature__news__logos {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .feature__news__logos {
+    gap: 30px;
+    div {
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .feature__heading {
+    font-size: 14px;
+  }
+}
